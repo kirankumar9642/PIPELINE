@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="wmTestSuite.xml">
+    <webMethodsTestCase name="Expected_Case">
+        <service folder="DOM_1APR" name="new_flowservice">
+            <input>
+                <file filename="resources/test/xml/data/addExpectedInput.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/xml/data/addExpectedOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
