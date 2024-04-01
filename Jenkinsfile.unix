@@ -41,7 +41,7 @@ pipeline {
 	
     }
 	post {
-	    failure {
+	    success {
 		emailext attachLog: true, body: 'JOB testing Failed', subject: 'Jenkins Job testing', to: 'kirankumar.kunduru@softwareag.com'
 	    }
 	}
