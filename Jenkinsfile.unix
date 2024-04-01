@@ -38,10 +38,11 @@ pipeline {
 		junit 'report/'
 		}
 	}
-	stage('EMAIL') {
-	    steps {
-		mail bcc: '', body: 'job ${env.JOB_NAME} ', cc: '', from: '', replyTo: '', subject: 'jenkins job testing', to: 'kirankumar.kunduru@softwareag.com'
+	
+    }
+	post {
+	    failure {
+		emailext attachLog: true, body: 'JOB testing Failed', subject: 'Jenkins Job testing', to: 'kirankumar.kunduru@softwareag.com'
 	    }
 	}
-    }
 }
