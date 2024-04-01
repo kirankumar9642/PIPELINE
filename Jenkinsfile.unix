@@ -38,9 +38,9 @@ pipeline {
 		junit 'report/'
 		}
 	}
-	stage('EMAIL'){
+	stage('EMAIL') {
 	    steps {
-		mail bcc: '', body: 'job ', cc: '', from: '', replyTo: '', subject: 'jenkins job testing', to: 'kirankumar.kunduru@softwareag.com'
+		mail bcc: '', body: 'job ${env.JOB_NAME} ', cc: '', from: '', replyTo: '', subject: 'jenkins job testing', to: 'kirankumar.kunduru@softwareag.com'
 	    }
 	}
     }
