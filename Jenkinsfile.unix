@@ -38,5 +38,10 @@ pipeline {
 		junit 'report/'
 		}
 	}
+	stage('EMAIL'){
+	    steps {
+		mail bcc: '', body: 'job ', cc: '', from: '', replyTo: '', subject: 'jenkins job testing', to: 'kirankumar.kunduru@softwareag.com'
+	    }
+	}
     }
 }
