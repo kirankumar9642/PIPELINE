@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="Sample tests for the WmServiceMockSamples implementation" name="Sample Tests">
+    <webMethodsTestCase name="addintsoutputCheck">
+        <service folder="CDCI_DEMO.services" name="addIntsFlowservice">
+            <input>
+                <file filename="resources/test/data/inpt.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/otput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
