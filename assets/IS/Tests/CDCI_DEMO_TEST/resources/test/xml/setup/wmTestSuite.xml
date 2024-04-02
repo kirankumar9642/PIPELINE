@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="wmTestSuite.xml">
+    <webMethodsTestCase name="extOpt">
+        <service folder="CDCI_DEMO.services" name="addIntsFlowservice">
+            <input>
+                <file filename="resources/test/xml/data/inpt.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/xml/data/outpt.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
