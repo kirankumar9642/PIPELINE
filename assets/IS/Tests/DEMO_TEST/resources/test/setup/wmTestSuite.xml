@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="wmTestSuite.xml">
+    <webMethodsTestCase name="expt_output">
+        <service folder="DEMO_SUITE.services" name="addIntsFlowService">
+            <input>
+                <file filename="resources/test/data/input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
