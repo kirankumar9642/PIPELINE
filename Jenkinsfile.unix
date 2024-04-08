@@ -19,7 +19,7 @@
 */
 
 pipeline {
-    agent {label 'Group3_VM'} 
+    agent {label 'VMRHLJNJGROUP01_GROUP01'} 
 
     stages {
         stage('Build'){
